@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang="zh-TW">
+<HEAD>
+<TITLE> BUY SOMETHING </TITLE>
+<META charset="big5" />
+<link rel="stylesheet" type="text/css" href="reset.css">
+<style>
+.top {
+margin:0 auto;
+background-image:url(main.jpg);
+background-repeat:no-repeat;
+width:1220px;
+height:200px;
+}
+.main {
+background-color:#e3e3e3;
+width:1220px;
+height:0 auto;
+margin:0 auto;   /*區塊置中*/
+text-align:left; /*內容靠左*/
+}
+
+	.font {
+	background-color:#fff;
+	font-family:impact;
+	font-size:50px;
+	padding:10px;
+	}
+	a:link {
+	color:#fdb9b9;
+	text-decoration:none;
+	}
+	a:visited {
+	color:#fdb9b9;
+	text-decoration:none;
+	} 
+	a:hover {
+	font-size:20;
+	color:#f98484;
+	text-decoration:none;
+	} 
+	a:active {
+	color:#f98484; 
+	text-decoration:none;
+	}
+
+.table {
+padding:10px;
+}
+</style>
+</HEAD>
+
+<BODY>
+<div class="top" align="center">
+</div>
+
+<div class="main">
+<div class="font">
+<a href=index.html><font size="50px">HOME　</a>
+<a href=member.php><font size="50px">　MEMBER　</a>
+<a href=orders.php><font size="50px">　ORDERS</a>
+　　　　　<a href=cart.php><img src="cart.png" width="40px"></a>
+<form action="Search.php" align="right">
+<input type="text" name="s_text" />
+<input type="image" src="magnifier.png" width="40px" />
+</form>
+</div>
+
+<table class="table" border=40 bordercolor="#e3e3e3" width="60%" bgcolor="#FFF">
+<tr>
+	<td rowspan="3" width="40%"><img src="product/T_01.jpg"  width="100%"></td>
+	<td colspan="2"><center><h2>白色T-shirt (女版)</h2></center></td>
+</tr>
+<tr>
+	<td><center><h2>SIZE</h2></center></td><td>S　M　L　XL</td>
+</tr>
+<tr>
+	<td><center><h2>COLOR</h2></center></td><td>White</td>
+</tr>
+</table>
+
+<table class="table" border=40 bordercolor="#e3e3e3" width="60%" bgcolor="#FFF">
+<tr>
+	<td rowspan="3" width="40%"><img src="product/T_02.jpg"  width="100%"></td>
+	<td colspan="2"><center><h2>黑色T-shirt (女版)</h2></center></td>
+</tr>
+<tr>
+	<td><center><h2>SIZE</h2></center></td><td>S　M　L　XL</td>
+</tr>
+<tr>
+	<td><center><h2>COLOR</h2></center></td><td>Black</td>
+</tr>
+</table>
+
+<table class="table" border=40 bordercolor="#e3e3e3" width="60%" bgcolor="#FFF">
+<tr>
+	<td rowspan="3" width="40%"><img src="product/T_03.jpg"  width="100%"></td>
+	<td colspan="2"><center><h2>黑色T-shirt (女版)</h2></center></td>
+</tr>
+<tr>
+	<td><center><h2>SIZE</h2></center></td><td>S　M　L　XL</td>
+</tr>
+<tr>
+	<td><center><h2>COLOR</h2></center></td><td>White</td>
+</tr>
+</table>
+
+</div>
+</BODY>
+
+</HTML>

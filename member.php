@@ -17,7 +17,10 @@ background-color:#e3e3e3;
 width:1220px;
 height:0 auto;
 margin:0 auto;   /*區塊置中*/
-text-align:left; /*內容靠左*/
+}
+form{
+margin:0 auto;
+text-align:center;
 }
 
 	.font {
@@ -65,15 +68,46 @@ padding:10px;
 <input type="image" src="magnifier.png" width="40px" />
 </form>
 </div>
+
 <?php
+echo "<br><br>";
+echo "<center><font size=3><b>會員登入</b></font></center>";
 echo "<form action=Search.php align=right>";
-echo "<input type=text name=m_id />";
-echo"<br>";
-echo "<input type=text name=m_pass />";
-echo "<input type=button name=login text='LOGIN'";
+echo "<h1><font size=2>會員帳號：</font><input type=text name=m_id /></h1>";
+echo "<h1><font size=2>會員密碼：</font><input type=text name=m_pass /></h1>";
+echo "<input type=button name=login value='LOGIN'>";
+echo "　<input type=button name=join value='JOIN' onclick=location.href='m_join.php'>";
 echo "</form>";
+
+$m_id=$_POST['m_id'];
+$m_pass=$_POST['m_pass'];
+$conn=mysql_connect('localhost','root','takming') or die("資料庫錯誤!");
+mysql_select_db('D10116231');
+$sql="select * from member where m_id='($m_id)'";
+$res=mysql_query($sql) or die("會員帳號密碼錯誤!");
+$row=mysql_fetch_array($res);
+$loginSuccess = False;
+
+if ($row && $row['password'])
+{
+	if (md5($m_pass)==$row['password'])
+	{
+		$loginSuccess=true;
+	}
+}
+
+if ($loginSuccess)
+{
+	
+}
+else
+{
+
+}
 ?>
+
 </div>
+
 </BODY>
 
 </HTML>

@@ -3,53 +3,9 @@
 <HEAD>
 <TITLE> BUY SOMETHING </TITLE>
 <META charset="big5" />
-<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="member.css">
 <style>
-.top {
-margin:0 auto;
-background-image:url(main.jpg);
-background-repeat:no-repeat;
-width:1220px;
-height:200px;
-}
-.main {
-background-color:#e3e3e3;
-width:1220px;
-height:0 auto;
-margin:0 auto;   /*區塊置中*/
-}
-form{
-margin:0 auto;
-text-align:center;
-}
 
-	.font {
-	background-color:#fff;
-	font-family:impact;
-	font-size:50px;
-	padding:10px;
-	}
-	a:link {
-	color:#fdb9b9;
-	text-decoration:none;
-	}
-	a:visited {
-	color:#fdb9b9;
-	text-decoration:none;
-	} 
-	a:hover {
-	font-size:20;
-	color:#f98484;
-	text-decoration:none;
-	} 
-	a:active {
-	color:#f98484; 
-	text-decoration:none;
-	}
-
-.table {
-padding:10px;
-}
 </style>
 </HEAD>
 
@@ -59,7 +15,7 @@ padding:10px;
 
 <div class="main">
 <div class="font">
-<a href=index.html><font size="50px">HOME　</a>
+<a href=index.php><font size="50px">HOME　</a>
 <a href=member.php><font size="50px">　MEMBER　</a>
 <a href=orders.php><font size="50px">　ORDERS</a>
 　　　　　　<a href=cart.php><img src="cart.png" width="40px"></a>
@@ -98,11 +54,11 @@ if ($row && $row['password'])
 
 if ($loginSuccess)
 {
-	
+echo "<center>登入成功!</center>";	
 }
 else
 {
-
+echo "<center>登入失敗!</center>";	
 }
 ?>
 

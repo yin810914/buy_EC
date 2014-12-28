@@ -1,0 +1,89 @@
+@media screen and (min-width: 1220px) {
+	.top {
+	margin:0 auto;
+	background-image:url(main.jpg);
+	background-repeat:no-repeat;
+	width:1220px;
+	height:200px;
+	}
+	.main {
+	background-color:#e3e3e3;
+	width:1220px;
+	height:0 auto;
+	margin:0 auto;   /*區塊置中*/
+	text-align:left; /*內容靠左*/
+	}
+
+		.font {
+		background-color:#fff;
+		font-family:impact;
+		font-size:50px;
+		padding:10px;
+		}
+		a:link {
+		color:#fdb9b9;
+		text-decoration:none;
+		}
+		a:visited {
+		color:#fdb9b9;
+		text-decoration:none;
+		} 
+		a:hover {
+		font-size:20;
+		color:#f98484;
+		text-decoration:none;
+		} 
+		a:active {
+		color:#f98484; 
+		text-decoration:none;
+		}
+
+	.table {
+	padding:10px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1220px){
+	.top {
+	margin:0 auto;
+	background-image:url(main2.jpg);
+	background-repeat:no-repeat;
+	width:820px;
+	height:200px;
+	}
+	.main {
+	background-color:#e3e3e3;
+	width:820px;
+	height:0 auto;
+	margin:0 auto;   /*區塊置中*/
+	text-align:left; /*內容靠左*/
+	}
+
+		.font {
+		background-color:#fff;
+		font-family:impact;
+		font-size:30px;
+		padding:10px;
+		}
+		a:link {
+		color:#fdb9b9;
+		text-decoration:none;
+		}
+		a:visited {
+		color:#fdb9b9;
+		text-decoration:none;
+		} 
+		a:hover {
+		font-size:20;
+		color:#f98484;
+		text-decoration:none;
+		} 
+		a:active {
+		color:#f98484; 
+		text-decoration:none;
+		}
+
+	.table {
+	padding:10px;
+	}
+}
